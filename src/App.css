@@ -5,20 +5,6 @@
   flex-direction: row;
 }
 
-.menu {
-  background-color: #333;
-  flex-grow: 0.2;
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.menu ul li {
-  padding: 1em 0;
-}
-
 .content {
   flex-grow: 0.8;
 }

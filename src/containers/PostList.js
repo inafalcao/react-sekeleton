@@ -6,9 +6,10 @@ import { bindActionCreators } from 'redux'
 class PostList extends Component {
 
 	componentWillMount() {
+	}
 
-		// recuperar a lista de posts da página 0.
-
+	componentDidMount() {
+		//this.props.fetchPosts()
 	}
 
 	header() {
@@ -16,6 +17,8 @@ class PostList extends Component {
 	}
 
 	render() {
+
+		console.log(this.props.posts)
 
 		return (
 			<h1>Posts List</h1>
@@ -38,9 +41,7 @@ class PostList extends Component {
 }
 
 function mapStateToProps({ posts }) {
-	return {
-		posts: []
-	}
+	return { posts }
 
 	// Tabela espera uma matriz.
 
@@ -57,7 +58,7 @@ function mapStateToProps({ posts }) {
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators(fetchPosts, dispatch)
+	return bindActionCreators({ fetchPosts }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostList)
