@@ -1,0 +1,24 @@
+.table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table thead {
+    color: #eee;
+    background-color: #333;
+    text-transform: uppercase;
+}
+
+.table thead tr th {
+    padding: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;   
+}
+
+.table tbody tr td {
+    padding: 12px;
+}
+
+.table tbody tr:nth-child(2n) { 
+    background-color: #eee;
+}
