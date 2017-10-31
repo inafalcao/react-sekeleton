@@ -5,7 +5,7 @@ import '../App.css';
 import Menu from './menu/Menu'
 import PostList from '../containers/PostList'
 import PostNew from '../containers/PostNew'
-import PostWeather from '../containers/WeatherList'
+import WeatherList from '../containers/WeatherList'
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 

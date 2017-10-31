@@ -16,20 +16,23 @@ class WeatherList extends Component {
 		return ['Header 1', 'Header 2', 'Header 3']
 	}
 
-	render() {
+	renderLi() {
+		if(this.props.weather) {
+			return this.props.weather.map(_ => <li> { _.coord } </li>)
+		}
+		return ""
+	}
 
-		console.log(this.props.posts)
+	render() {
 
 		return (
 			<div>
 				<h1>Weather List</h1>
 
 				<ul>
-					this.props.weather.map( w => {
-						<li>{ w.coord.lon } - { w.coord.lat }</li>
-					})
+					{this.renderLi()}
 				</ul>
-			<div>
+			</div>
 		)
 	}
 
@@ -43,4 +46,4 @@ function mapDispatchToProps(dispatch) {
 	return bindActionCreators({ fetchWeather }, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(WeatherList)
+export default connect(null, mapDispatchToProps)(WeatherList)

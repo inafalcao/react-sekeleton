@@ -17,7 +17,7 @@ export function fetchPosts() {
 		request.then((data) => {
 			dispatch({
 				type: FETCH_POSTS,
-				payload: data
+				payload: data.data
 			})
 		})
 	}
@@ -34,7 +34,7 @@ export function fetchWeather() {
 		request.then((data) => {
 			dispatch({
 				type: FETCH_WEATHER,
-				payload: data
+				payload: data.data
 			})
 		})
 	}
