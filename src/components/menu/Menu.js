@@ -17,6 +17,9 @@ class Menu extends Component {
 								Clima
 						</Link>
 						<span className="badge red">13</span>
+						{/* <ul className="sub">
+							<li>teste</li>
+						</ul> */}
 					</li>
 					<li>
 						<Link to="/posts"><img src={iconRead} className="icon"/>

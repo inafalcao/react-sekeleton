@@ -5,10 +5,15 @@
   flex-direction: row;
 }
 
-.content {
-  padding: 20px;
+.app-container {
   width: 100%;
-  background-color: #F9FAFC;
+  height: 100%;
+}
+
+.app-content {
+  padding: 20px;
+  background-color: #F3F5F6;
+  height: 100%;
 }
 
 .App-logo {
@@ -16,7 +21,7 @@
   height: 80px;
 }
 
-.app-header {
+/*.app-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
@@ -25,7 +30,7 @@
 
 .app-title {
   font-size: 1.5em;
-}
+}*/
 
 .app-intro {
   font-size: large;

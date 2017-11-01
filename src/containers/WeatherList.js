@@ -47,7 +47,7 @@ function mapStateToProps({weather}) {
 	// TODO: Como garantir que tamanho do array de posts
 	//       será igual ao tamanho do array de headers?
 	const matrix = weather.map( (p) => 
-		[p.lat   | '', 
+		 [p.lat   | '', 
 		  p.lon   | '',
 		  p.value | ''] )
 

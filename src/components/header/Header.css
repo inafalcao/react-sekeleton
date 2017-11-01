@@ -1,0 +1,31 @@
+.app-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    color: #444;
+}
+
+.app-header .app-actions {
+    list-style: none;
+}
+
+.app-header .app-actions li {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.app-header .app-actions li:hover {
+    transform: scale(1.05);
+}
+
+.app-title h1 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.app-title {
+
+}

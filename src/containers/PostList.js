@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { fetchPosts } from '../actions'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import Table from '../components/table/Table'
 
 class PostList extends Component {
 
@@ -9,52 +10,36 @@ class PostList extends Component {
 	}
 
 	componentDidMount() {
-		//this.props.fetchPosts()
+		this.props.fetchPosts()
 	}
 
 	header() {
-		return ['Header 1', 'Header 2', 'Header 3']
+		return ['Id', 'Title', 'Categories', 'Content']
 	}
 
 	render() {
 
-		console.log(this.props.posts)
-
 		return (
-			<h1>Posts List</h1>
+			<div>
+				<h1>Posts List</h1>
+
+				<Table headers={this.header()}
+					   rows={this.props.posts}	/>
+			</div>
+
 		)
-
-		/*return (
-			<header className="page-title"></header>
-
-			<Search onSearch = { this.searchPostsAction() }></Search>
-
-			<Table headers = { this.header() } 
-			       rows = { this.props.posts } >
-			</Table>
-
-			<Pages></Pages>
-
-		)*/
 	}
 
 }
 
 function mapStateToProps({ posts }) {
-	return { posts }
+	const matrix = 
+	posts.map( (p) => [p.id,
+					   p.title, 
+					   p.categories,
+					   p.content])
 
-	// Tabela espera uma matriz.
-
-	// TODO: verificar se é possível ter um array
-	// 		 de tipos dinâmicos em js.
-	
-	// TODO: Como garantir que tamanho do array de posts
-	//       será igual ao tamanho do array de headers?
-	/*return {
-			posts: posts.map( p => [p.title 	 | '', 
-									p.categories | '',
-									p.text 		 | ''] )
-	}*/
+	return { posts: matrix }
 }
 
 function mapDispatchToProps(dispatch) {
