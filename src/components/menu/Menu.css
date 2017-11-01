@@ -1,19 +1,54 @@
 .menu {
 	font-family: 'Roboto';
-	font-size: 1.2em;
-	background-color: #333;
-	width: 20%;
+	font-size: 0.9em;
+	background-color: #24344B;
+	width: 280px;
+	transition: 1s;
+	font-weight: 400;
+}
+
+.menu li {
+	padding: 8% 0 8% 8%;
+	text-align: left;
+	transition: 0.5s;
+	color: #A2A9AF;
+	display: flex;
+	align-items: center;
+}
+
+.menu li:hover {
+	background-color: #2B3C58;
+}
+
+.menu .icon {
+	width: 18px;
+	padding: 0 8px;
+}
+
+.menu .badge {
+	padding: 1px 6px;
+	border-radius: 10%;
+	color: #fff;
+	font-size: 0.7em;
+}
+
+.menu .badge.red {
+	background-color: #F63E5F;
+}
+.menu .badge.green {
+	background-color: #43C9C2;
 }
 
 .menu ul {
 	list-style: none;
 	padding: 0;
-}
-
-.menu ul li {
-	padding: 1em 0;
+	padding-top: 50%;
 }
 
 .menu ul li a {
-	color: white;
+	text-decoration: none;
+	color: #A2A9AF;
+	display: flex;
+	align-items: center;
+	width: 75%;
 }

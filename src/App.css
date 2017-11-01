@@ -6,8 +6,9 @@
 }
 
 .content {
-  flex-grow: 0.8;
   padding: 20px;
+  width: 100%;
+  background-color: #F9FAFC;
 }
 
 .App-logo {
