@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // <Search onSearch={ this.props.searchAction } > Clique Aqui <Search>
 
-export default class Search() {
+export default class Search {
 
 	render() {
 		/*return (

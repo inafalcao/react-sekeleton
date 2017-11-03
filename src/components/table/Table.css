@@ -13,7 +13,7 @@
 .table thead tr th {
     padding: 20px;
     font-family: 'Roboto';
-    font-weight: 300;   
+    font-weight: 300;
 }
 
 .table tbody tr td {
@@ -24,18 +24,18 @@
     transition: 0.5s;
 }
 
-.table tbody tr:nth-child(2n) { 
+.table tbody tr:nth-child(2n) {
     background-color: #F1F2F6;
 }
 
-.table tbody tr:nth-child(2n+1) { 
+.table tbody tr:nth-child(2n+1) {
     background-color: #fff;
 }
 
-.table tbody tr:nth-child(2n):hover { 
+.table tbody tr:nth-child(2n):hover {
     background-color: #ddd;
 }
 
-.table tbody tr:nth-child(2n+1):hover { 
+.table tbody tr:nth-child(2n+1):hover {
     background-color: #ddd;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { fetchWeather } from '../actions'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import Table from '../components/table/Table'
 
 class WeatherList extends Component {
@@ -43,11 +42,11 @@ function mapStateToProps({weather}) {
 
 	// TODO: verificar se é possível ter um array
 	// 		 de tipos dinâmicos em js.
-	
+
 	// TODO: Como garantir que tamanho do array de posts
 	//       será igual ao tamanho do array de headers?
-	const matrix = weather.map( (p) => 
-		 [p.lat   | '', 
+	const matrix = weather.map( (p) =>
+		 [p.lat   | '',
 		  p.lon   | '',
 		  p.value | ''] )
 

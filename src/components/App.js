@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../App.css';
+import React, { Component } from 'react'
+import '../App.css'
 import Menu from './menu/Menu'
 import Header from './header/Header'
 import PostList from '../containers/PostList'
 import PostNew from '../containers/PostNew'
 import WeatherList from '../containers/WeatherList'
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -33,7 +32,7 @@ class App extends Component {
 				</section>
 
 			</div>
-			
+
 		</Router>
 
 	);

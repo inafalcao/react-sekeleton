@@ -13,18 +13,18 @@ class Menu extends Component {
 			  <ul>
 					<li>
 						<NavLink to="/weather">
-							<img src={iconLayers} className="icon"/>
+							<img alt="Layers Icon" src={iconLayers} className="icon"/>
 								Clima
-							<span className="badge red">13</span>	
+							<span className="badge red">13</span>
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/posts"><img src={iconRead} className="icon"/>
+						<NavLink to="/posts"><img alt="Read Icon" src={iconRead} className="icon"/>
 							Posts
 							<span className="badge green">50</span>
 						</NavLink>
 					</li>
-					<li><NavLink to="/post"><img src={iconDash} className="icon"/>Postar</NavLink></li>
+					<li><NavLink to="/post"><img alt="Dashboard Icon" src={iconDash} className="icon"/>Postar</NavLink></li>
 			  </ul>
 			</nav>
 		)

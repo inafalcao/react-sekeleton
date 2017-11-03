@@ -1,26 +1,33 @@
 import React, { Component } from 'react'
-import { fetchPosts } from '../actions'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
+import { Field, reduxForm } from 'redux-form'
 
 class PostNew extends Component {
+
+	renderTitleField(field) {
+		return (
+			<div>
+				<input
+					type="text"
+					{...field.input} />
+			</div>
+		)
+	}
 
 	render() {
 
 		return (
-			<h1>Post New</h1>
+			<form>
+				<Field
+					name="title"
+					component={this.renderTitleField}>
+				</Field>
+			</form>
 		)
 
 	}
 
 }
 
-function mapStateToProps({ posts }) {
-	return { posts: [] }
-}
-
-function mapDispatchToProps(dispatch) {
-	return bindActionCreators({fetchPosts}, dispatch)
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(PostNew)
+export default reduxForm({
+	form: 'PostNewForm'
+})(PostNew)

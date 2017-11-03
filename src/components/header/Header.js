@@ -9,7 +9,7 @@ class Header extends Component {
 			<header className="app-header">
 				<h1 className="app-title">Top</h1>
 				<ul className="app-actions">
-					<li><a><img src={iconLogout} /></a></li>
+					<li><a><img alt="Logout Icon" src={iconLogout} /></a></li>
 				</ul>
 			</header>
 		)
