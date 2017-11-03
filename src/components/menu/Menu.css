@@ -8,12 +8,26 @@
 }
 
 .menu li {
-	padding: 8% 0 8% 8%;
+	
 	text-align: left;
 	transition: 0.5s;
 	color: #A2A9AF;
 	display: flex;
 	align-items: center;
+}
+
+.menu ul li a {
+	padding: 8% 0 8% 8%;
+	text-decoration: none;
+	color: #A2A9AF;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+.menu li a.active {
+	background-color: #3E5069;
 }
 
 .menu li:hover {
@@ -30,6 +44,8 @@
 	border-radius: 10%;
 	color: #fff;
 	font-size: 0.7em;
+	position: absolute;
+	right: 8%;
 }
 
 .menu .badge.red {
@@ -43,12 +59,4 @@
 	list-style: none;
 	padding: 0;
 	padding-top: 50%;
-}
-
-.menu ul li a {
-	text-decoration: none;
-	color: #A2A9AF;
-	display: flex;
-	align-items: center;
-	width: 75%;
 }
